@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+{% load static %}
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+        <link rel="stylesheet" href="{% static 'style.css' %}">
+        <title>{% block title %}Catálogo{% endblock title %}</title>
+    </head>
+    <body>
+          {% block carousel %}{% endblock carousel %}
+          {% block content %}{% endblock content %}
+          <footer>
+            <div id="contact-area">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-12">
+                    <h3 class="main-title">Entre em contato conosco</h3>
+                  </div>
+                  <div class="col-md-4 contact-box">
+                    <i class="fas fa-phone"></i>
+                    <p><span class="contact-title">Ligue para nos: </span>(83) 996467829</p>
+                  </div>
+                  <div class="col-md-4 contact-box">
+                    <i class="fa fa-clock-o" aria-hidden="true"></i>
+                    <p><span class="contact-title">Horários: </span>07:00 - 17:00</p>
+                  </div>
+                  <div class="col-md-4 contact-box">
+                    <i class="fas fa-envelope"></i>
+                    <p><span class="contact-title">Envie um e-mail: </span>Pedrolucasrodrigues@gmail.com</p>
+                  </div>
+                  <div class="col-md-4 contact-box">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p><span class="contact-title">Venha nos ver: </span>Rua Joaquim Lopes Ribeiro - Centro</p>
+                  </div>
+                  <div class="col-md-4 contact-box">
+                    <i class="fab fa-instagram"><a href="https://www.instagram.com/imperiodostylo/" class="nav-link"></a></i>
+                    <p><span class="contact-title">Siga-nos</span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="copy-area">
+              <div class="container">
+                  <div class="row">
+                      <div class="col-md-12">
+                          <p>Desenvolvido por <a href="https://www.linkedin.com/in/railton-nogueira-3776361a9" target="_blank">Railton</a> &copy;2021 </p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          </footer>
+
+        <script src="{% static 'js/bootstrap.min.js' %}"></script>
+        <script src="https://kit.fontawesome.com/9953254317.js" crossorigin="anonymous"></script>
+    </body>
+</html>

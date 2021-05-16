@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% load static %}
+{% load thumbnail %}
+{% block content %}
+	<div class="row">
+		{% for product in products %}
+			{% include "product.html" %}
+		{% endfor %}
+	</div>
+{% endblock content %}

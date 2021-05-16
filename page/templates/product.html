@@ -1,0 +1,17 @@
+{% load static %}
+{% load thumbnail %}
+<div class="col-sm-6">
+    <link rel="stylesheet" href="{% static 'style2.css' %}">
+    <div class="thumbnail">
+            {% if product.image %}
+                 <img src="{{ product.image|thumbnail_url:'product_image' }}" height="450" width="350" class="img-fluid" alt="Responsive image" />
+            {% else %}
+                <img src="#" height="350" width="250" class="img-fluid" alt="Responsive image" />
+            {% endif %}
+        <div class="caption">
+            <h3>{{ product }}</h3>
+            {{ product.description|linebreaks }}
+            <p><a href="https://api.whatsapp.com/send?phone=5583996467829&text=Ol%C3%A1+tudo+bem%3F+Logo+responderei++sua+mensagem" target="_blank" class="btn btn-outline-warning">Fale com nosso vendedor</a>
+        </div>
+    </div>
+</div>
